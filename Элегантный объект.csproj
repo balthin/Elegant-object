@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{658F0B45-D0B3-449D-9DE8-1D61A54BAB06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Элегантный_объект</RootNamespace>
+    <AssemblyName>Элегантный объект</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoardSize.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureChessBoard.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BoardView.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board-silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board-iron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bord-gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bord-silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bord-iron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_bk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_bn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_bp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_bq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_br.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_wb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_wk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_wn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_wp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_wq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piece_wr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board-small.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
